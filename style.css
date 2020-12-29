@@ -19,6 +19,7 @@ body{
 
 /*Section principal boc pade*/
 #bloc_page{
+    flex-wrap: wrap;
     position: relative;
     background-color: #ffffff;
     width: 80%;
@@ -226,12 +227,13 @@ section{
   /*Flexbox*/  
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 55%;
 /*fin de commande Flexbox*/
     background-color: #F2F2F2;
     border-radius: 15px;
     margin: 25px;
-    margin-top: 10px;
+    margin-top: 1px;
 
 }
 
@@ -240,14 +242,18 @@ section{
 .article{
     position: relative;
     display: flex;
+    align-items: str;
     border: 2px solid rgb(255, 255, 255);
     background-color: #F2F2F2;
     border-style: solid #ffffff ;
+    justify-items: stretch;
     border-radius: 10px;
-    flex-basis: 25%;
-    height: 120px;
+    flex-basis: 170px;
+    height: 130px;
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
     margin: auto;
+    margin-top: 2%;
+
 
 }
 
@@ -300,12 +306,20 @@ section{
     margin-top:-10px;
     
 }
+
+#titre2{
+    font-size: 15px;
+    display: flex;
+    margin-top:auto;
+    margin-left:1.5%;
+    width: 100%;
+}
+
 #afficher_plus{
     display: flex;
-    margin-top: auto;
-
-
-
+    margin-top: 1%;
+    margin-left: 30px;
+    width: 100%;
 }
 
 /*Section block_droit texte plus icon*/
@@ -318,25 +332,23 @@ section{
 
 #icon_populaires{
     margin-left: 175px;
+    margin: auto;
     
 
 }
 /*Section block_aside*/
 
 aside{
-    flex: space-evenly;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
     background-color: #F2F2F2;
     background-position: relative;
-    border-style: solid #ffffff ;
-    flex-direction: column;
-    background-color: #F2F2F2 ;
-    display: flex;
-    justify-content: space-evenly;
-  /*  margin: 25px;
-    margin-left: 620px;
-    margin-top:-415px ;*/
+    border-style: solid #ffffff;
+
+    border-radius: 15px;
+    margin: 25px;
+    margin-top: 1px;
     border-radius: 15px;
 }
 
@@ -348,7 +360,7 @@ aside figure{
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
     margin-left: 30px ;
     height: 110px;
-    margin-top: 10px;
+    margin-top: 5%;
 }
 
 aside figure img{
@@ -401,7 +413,27 @@ aside figure img{
    
 }
 
+/*Section Ativités à Marseille*/
+#activites{
+    background-color: rgb(207, 207, 207);
+    flex-direction: row;
 
+    display: flex;
+    flex-wrap: wrap;
+    width: 75;
+}
+
+.activites_marseille{
+    box-shadow: 5px 5px 5px rgb(212, 212, 212);
+    background-color: gray;
+    display: flex;
+    width: 220px;
+    height: 110px;
+}
+.activites_marseille img{
+    width: 50%;
+    height: -85%;
+}
 
 /*Section pied de page*/
 
