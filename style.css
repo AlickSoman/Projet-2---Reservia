@@ -22,7 +22,9 @@ body{
     flex-wrap: wrap;
     position: relative;
     background-color: #ffffff;
-    width: 80%;
+    /*width auto pour que les bloc se mettent l'un en dessous de l'autre en fonction de 
+    la taille de l'écren*/
+    width: 70%;
     margin: 20px auto;
     padding: 20px;
     height: 100%;
@@ -40,17 +42,20 @@ h2{
     font-size: 13px;
     padding: 11px;
     position: relative;
-    top: -30px;
+    bottom: 20px;
     margin-left:15px ;
     
 }
 
 /*Section logo*/
+#logo {
+    float:left;
+}
 #logodusite{
     width: 60px;
     padding: 11px;
     margin-left:15px ;
-    margin-top: 40px;
+
     
 }
 
@@ -58,15 +63,14 @@ h2{
 
 header nav{
     position: relative;
-    Margin-top: -60px;
-    
+ 
     
 
 }
 nav{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    
     height: 18%;
     
 
@@ -81,46 +85,58 @@ nav ul{
 
    
 }
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
 
+    color: gray;
+
+}
+.asinscrire{
+    color: #0065FC;
+}
 nav ul li{
     list-style-type: none;
     float : right;
     border-top: 2px solid transparent;
+    
     
 }
 
 nav ul li:hover{
     border-top-color: #0065FC;
     
+    
+    
 }
-nav a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 20px 30px;
 
+nav ul li:hover a{
     color: #0065FC;
-
 }
+
 
 /*Bar de recherche*/
 
 form{
     background-color: rgb(240, 240, 240);
     border-style:solid ;
-    border-width: 0.2px;
+    border: 0.2px;
     border-color: #f0f0f0;
     position: relative;
     display: inline-block;
     border-radius: 10px ;
     margin-left: 30px;
-    top: -20px;
+    bottom: 20px;
 }
 
 
 input {
     border-style: none;
-    height: 29.5px ;
+    height: 30px ;
     outline: none;
+    width: 100%;
+    
 
 }
 
@@ -141,13 +157,14 @@ form i{
 button
  {
     border-style: none;
-    height: 30px;
+    height: 32px;
     color: rgb(255, 255, 255);
+    border-color: #0065FC;
     background-color:  #0065FC;
-    border-style: none;
     border-radius: 0px 10px 10px 0px;
     padding: 0px 10px 0px 10px;
-    margin-left:-10px ;
+    margin: 0px;
+    
 }
 
 #filtres li a{
@@ -156,7 +173,7 @@ button
     text-decoration: none;
     text-align: center;
 }
-#filtres :hover{
+#filtres :hover, #filtres li:hover i, #filtres li:hover a{
 color: rgb(255, 255, 255);
 background-color: #0065FC;
 }
@@ -183,7 +200,10 @@ background-color: #0065FC;
 
 /* filtre de recherche*/
 
-
+#filtres :hover, #filtres li:hover i, #filtres li:hover a {
+    color: rgb(255, 255, 255);
+    background-color: #0065FC;
+}
 
 .style_filtres{
 
@@ -211,9 +231,9 @@ background-color: #0065FC;
     color:#0065FC;
     font-size: 18px;
     background-color: #DEEBFF ;
-    border-radius: 100%;
+    border-radius: 15px;
     border-color: #DEEBFF ;
-    padding: 6px 6px 6px 6px;
+    padding: 5px 7px 5px 5px;
     margin-right: 10px;
     
    
@@ -227,10 +247,10 @@ section{
   /*Flexbox*/  
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 55%;
+    justify-content: space-evenly;
+    width: 80%;
 /*fin de commande Flexbox*/
-    background-color: #F2F2F2;
+    background-color : #F2F2F2;
     border-radius: 15px;
     margin: 25px;
     margin-top: 1px;
@@ -240,48 +260,50 @@ section{
 /*Section hebergement article 1*/
 
 .article{
-    position: relative;
     display: flex;
-    align-items: str;
+    flex-wrap: wrap;
     border: 2px solid rgb(255, 255, 255);
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     border-style: solid #ffffff ;
-    justify-items: stretch;
     border-radius: 10px;
-    flex-basis: 170px;
+    flex-basis: 155px;
     height: 130px;
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
-    margin: auto;
+    margin: 10px;
     margin-top: 2%;
 
 
 }
+.article figcaption{
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 90%;
 
-#hebergements figure figcaption img{
-    display: flex;
+}
+
+#hebergements .article img{
     width: 100%;
-    height: 60%;
+    height: 50%;
     border-radius: 10px 10px 0px 0px;
 
     
 }
 
 #p_titre{
+    margin-bottom: auto;
+    margin-top: auto;
     font-size: 12px ;
-    font-family: 'raleway' ;
-    margin-top: 0px;
     margin-left: 5px;
-    width: 100%;
+    width: 95%;
 
 }
 
 #p_prix{
-
     font-size: 10px ;
-    font-family: 'raleway' ;
-    margin-top: -10px;
+    margin-bottom: auto;
+    margin-top: auto;
     margin-left: 5px;
-    width: 100%;
+    width: 80%;
 }
 
 #class1_4star{
@@ -301,9 +323,7 @@ section{
 }
 
 #fontawesome_position{
-
     height: 20px ;
-    margin-top:-10px;
     
 }
 
@@ -333,7 +353,8 @@ section{
 #icon_populaires{
     margin-left: 175px;
     margin: auto;
-    
+    float: right;
+    padding-right: 20px;
 
 }
 /*Section block_aside*/
@@ -341,60 +362,68 @@ section{
 aside{
     display: flex;
     flex-direction: column;
-    
     background-color: #F2F2F2;
     background-position: relative;
     border-style: solid #ffffff;
-
+    width: 33%;
     border-radius: 15px;
     margin: 25px;
     margin-top: 1px;
+    padding-top: auto;
+    padding-bottom: 20px;
     border-radius: 15px;
 }
 
 aside figure{
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
-    width: 80%;
-    border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
-    margin-left: 30px ;
-    height: 110px;
-    margin-top: 5%;
+    width: 80%;
+    height: 23%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+aside figure figcaption{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    bottom: 15px;
+    
 }
 
 aside figure img{
     background-color: #0065FC;
-    width: 120px;
+    width: 40%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
-    margin-right: 0px;
-    margin-top: 0px;
-    display:flex;
-    
+
 }
 
 #p_titre_aside{
+    display: inline;
     font-size: 12px ;
-    font-family: 'raleway' ;
-    margin-top: -110px;
-    margin-left: 140px;
-    width: 100%;
-
+    font-family: 'raleway';
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 60%;
 }
 
 #p_prix_aside{
-
     font-size: 10px ;
     font-family: 'raleway' ;
-    margin-top: -10px;
-    margin-left: 140px;
-    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
 }
+
+
 .fontawesome_position2{
     position: relative;
-    margin-left: 135px;
-    margin-top: 25px;
+    margin-top: auto;
+    top: 10px;
+    width: 70%;
 
 }
 
@@ -414,27 +443,42 @@ aside figure img{
 }
 
 /*Section Ativités à Marseille*/
-/*#activites{
+#activites{
     background-color: rgb(207, 207, 207);
-    flex-direction: row;
-
     display: flex;
     flex-wrap: wrap;
-    width: 75;
+    height: auto;
+    width: 95%;
+}
+
+#activites #titre_activites{
+    width: 80%;
+    height: 10px;
+    padding-right: 100px;
+}
+
+.titre_lieu{
+    padding: 0px;
+    font-size: 13px;
 }
 
 .activites_marseille{
+    background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
-    background-color: gray;
+    border-radius: 10px;
     display: flex;
-    width: 220px;
-    height: 110px;
+    flex-direction: column;
+    width: 23%;
+    height: 300px;
 }
+
+
 .activites_marseille img{
-    width: 50%;
-    height: -85%;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 85%;
 }
-*/
+
 /*Section pied de page*/
 
 footer {
@@ -444,8 +488,6 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     
-
-
 
 }
 footer div{
