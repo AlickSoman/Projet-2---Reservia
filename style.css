@@ -13,7 +13,7 @@ body{
     padding: 0px;
     font-size: 15px;
     font-family:'raleway';
-    background-color: gray;
+
 
 }
 
@@ -58,7 +58,10 @@ h2{
 
     
 }
-
+header{
+    width: 100%;
+    flex-wrap: wrap;
+}
 /*Section navigation*/
 
 header nav{
@@ -69,27 +72,23 @@ header nav{
 }
 nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     
     height: 18%;
     
-
 }
 
 nav ul{
-    
     margin: 0px ;
     padding: 0px;
     overflow: hidden;
-
-
    
 }
 nav a{
     display: inline-block;
     text-decoration: none;
-    padding: 20px 30px;
-
+    padding: 20px 20px;
     color: gray;
 
 }
@@ -169,7 +168,6 @@ button
 
 #filtres li a{
     color: black;
-    top: -15px;
     text-decoration: none;
     text-align: center;
 }
@@ -445,7 +443,12 @@ aside figure img{
 /*Section Ativités à Marseille*/
 #activites{
     background-color: rgb(207, 207, 207);
-    display: flex;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3, 1fr;
+    
+    je peu mettre un grid à ma section pour facilité le placement des élément
+    */
     flex-wrap: wrap;
     height: auto;
     width: 95%;
@@ -469,14 +472,21 @@ aside figure img{
     display: flex;
     flex-direction: column;
     width: 23%;
-    height: 300px;
+    height: auto;
 }
 
-
+/*Style des images activites*/
 .activites_marseille img{
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     height: 85%;
+}
+
+/* img 5 et 6*/
+.activites_marseille .activites5-6{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 45%;
 }
 
 /*Section pied de page*/
