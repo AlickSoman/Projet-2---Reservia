@@ -362,7 +362,7 @@ aside{
     background-color: #F2F2F2;
     background-position: relative;
     border-style: solid #ffffff;
-    width: 33%;
+    width: 390px;
     border-radius: 15px;
     margin: 25px;
     margin-top: 1px;
@@ -375,8 +375,8 @@ aside figure{
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
-    width: 80%;
-    height: 23%;
+    width: 220px;
+    height: 100px;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 20px;
@@ -392,7 +392,7 @@ aside figure figcaption{
 
 aside figure img{
     background-color: #0065FC;
-    width: 40%;
+    width: 90px;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
 
@@ -470,7 +470,7 @@ aside figure img{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 23%;
+    width: 190px;
     height: auto;
 }
 
@@ -514,6 +514,6 @@ footer div p{
    
     font-size: 12px;
     color: #474747;
-    margin-top: -8px;
+    margin-top: 8px;
     
 }
