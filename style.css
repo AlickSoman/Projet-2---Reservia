@@ -1,8 +1,9 @@
 
+
 @font-face {
-    font-family: 'raleway' thin;
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'ralewaythin';
+    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -13,7 +14,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-size: 15px;
-    font-family:'raleway';
+    font-family: 'ralewaythin';
 
 
 }
@@ -610,7 +611,7 @@ footer div p{
     }
 
     header form {
-        
+        width: auto;
     }
 
     
