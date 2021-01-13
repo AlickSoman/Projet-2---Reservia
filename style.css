@@ -282,18 +282,20 @@ section{
     width: 90%;
 
 }
+
 #hebergements .article .image_mask{
-   height: 50%;
-    overflow: hidden;
-    line-height: 50%; 
+    height: 57%;
 }
 
-#hebergements .article img{
+#hebergements .article .image_mask img{
+    height: 100%;
+    object-fit: cover;
+    line-height: 50%;
+    overflow: hidden; 
     width: 100%;
     border-radius: 10px 10px 0px 0px;
-
-    
 }
+
 
 #p_titre{
     margin-bottom: auto;
@@ -395,18 +397,20 @@ aside figure figcaption{
     bottom: 15px;
     
 }
+
 aside figure .image_mask{
-    width: 90px;
-    overflow: hidden;
     height: 100%;
     display: inline-block;
- }
-aside figure img{
-    background-color: #0065FC;
-    height: 100%;
-    border-radius: 10px 0px 0px 10px;
 
 }
+
+aside figure .image_mask img{
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+ }
 
 #p_titre_aside{
     display: inline;
@@ -607,13 +611,28 @@ footer div p{
 /*Média screem Iphones6*/
 @media all and (max-width: 555px){
 
-    body{
-        width: 425px;
-    }
 
+    header{
+        width: 100%;
+    }
     #logodusite{
         width: 100px;
     }
+
+    nav {
+     
+        display: none;
+    
+    }
+/* header Mobile screen */
+    .mobilescreen{
+        display: block;
+    }
+
+    .mobilescreen ul li {
+        font-family: bold ;
+    }
+
 
     header h1{
         text-align: center;
@@ -623,9 +642,12 @@ footer div p{
         text-align: center;
         font-size: 20px;
     }
+/* bare de recherche iphone*/
 
-    header form {
-        width: auto;
+
+    input{
+        width:95% ;
+
     }
 
     
@@ -634,7 +656,9 @@ footer div p{
         background-color: #ffffff;
         flex-direction: column;
         justify-content: center;
-        width: 500px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
 
         }
     #section_articles{
@@ -671,6 +695,10 @@ footer div p{
         height: 200px;
     }
 
+
+    #titre_activites{
+        text-align: center;
+    }
 
 
 
