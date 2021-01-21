@@ -30,22 +30,23 @@ body{
     margin: 20px auto;
     padding: 20px;
     height: 100%;
+    overflow: hidden;
 }
 /*titre et sous titre ainsi que la barre de recherche*/
 h1{
     font-size: 19px;
     font-family:"raleway" ;
-    padding: 11px;
-    margin-left:15px ;
+    margin-top: 10px;
+    margin-left: 0px ;
     
 }
 #soustitre{
     font-family:"raleway" ;
     font-size: 13px;
-    padding: 11px;
+    padding-top: 19px;
     position: relative;
     bottom: 20px;
-    margin-left:15px ;
+    margin-left:0px ;
     
 }
 
@@ -55,8 +56,8 @@ h1{
 }
 #logodusite{
     width: 115px;
-    padding: 11px;
-    margin-left:15px ;
+    padding: 0px;
+    margin-left:0px ;
     font-weight: 700;
 
     
@@ -124,8 +125,9 @@ form{
     position: relative;
     display: inline-block;
     border-radius: 15px ;
-    margin-left: 30px;
+    margin-left: 0px;
     bottom: 20px;
+    overflow: hidden;
 }
 
 form div{
@@ -159,7 +161,7 @@ form i{
     background-color: #f0f0f0;
     padding: 0px 0px 0px 10px;
     width: 30px;
-    padding-top:10px ;
+    padding-top:10.3px ;
     height: 37px;
     
    
@@ -212,9 +214,9 @@ background-color: #0065FC;
 
 #infos_logements{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 15px;
     border-radius: 100%;
-    padding: 3px 6px 3px 6px;
+    padding: 4px 10px 4px 10px;
     border: 1px solid #e0dddd;
     margin-right: 5px;
 
@@ -222,8 +224,8 @@ background-color: #0065FC;
 
 #logements_dispodibles{
     
-    font-size: 10px;
-    margin-left: 30px;
+    font-size: 15px;
+    margin-left: 0px;
     bottom: 10px;
     
 
@@ -231,6 +233,9 @@ background-color: #0065FC;
 
 
 /* filtre de recherche*/
+#filtres{
+    padding-left: 0px;
+}
 
 #filtres :hover, #filtres li:hover i, #filtres li:hover a {
     color: rgb(255, 255, 255);
@@ -402,6 +407,7 @@ section{
 /*Section block_droit texte plus icon*/
 #populaires{
     padding:20px;
+    padding-left:50px ;
     font-size: 19px;
     font-family: 'raleway';
    
@@ -700,6 +706,7 @@ footer div p{
         width: 100%;
         margin: 0px;
         padding: 0px;
+        overflow: hidden;
 
     }
 
@@ -725,6 +732,9 @@ footer div p{
         display: block;
         justify-content: center;
         border-bottom-color: #0065FC ;
+        margin-left: 0px;
+        padding: 0px;
+
     }
 
 
@@ -733,71 +743,54 @@ footer div p{
     }
 
     .mobilescreen_s ul li {
+        font-family: 'raleway';
         border-top: none;
-        font-family: bold;
         font-size: 20px;
         border-bottom: 2px solid transparent;
+        margin-top: 10px;
 
     }
-
+/* menu à mettre à jour---------------------------------------*/
 
     .mobilescreen{
-        display: flex;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
+        display: block;
+        justify-content: center;
+        border-bottom-color: #0065FC ;
+        padding-top: 30px;
 
     }
     .mobilescreen ul{
         width: 100%;
-        justify-content: space-between;
         
     }
 
-    .mobilescreen ul {
-        height: 100px;
-        
-
-    }
 
     .mobilescreen ul li {
         height: 80px;
         text-align: center;
         width: 50%;
+        font-size: 20px;
         border-bottom: 2px solid #DEEBFF;
-        
-    }
-
-    .mobilescreen ul li:hover {
         border-top: none;
-        width: 50%;
+    }
+/* Désactivation du border top, par display none*/
+    .mobilescreen ul li:hover {
+        
         border-bottom-color: #0065FC ;
     }
 
-    /* Désactivation du border top, par display none*/
-    .mobilescreen ul li:hover{
-        border-top:none;
-        
-        
-        
-    }
-    
-
-
 
 /*titre du site */
-    #logodusite img{
-        font-size: 50px;
-    }
 
 
     header h1{
         text-align: center;
-        font-size: 23px;
+        font-size: 19px;
+        margin: 0;
     }
     header #soustitre{
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
     }
 
 
@@ -807,50 +800,48 @@ footer div p{
     }
 
     form{
-        border: 0.3px solid #e0dddd;
+        border: 2px solid #F2F2F2;
         background-color: rgb(255, 255, 255);
-        border-radius: 15px 15px 15px 15px;
-        width: 330px;
-        height: 50px;
-        left: 40px;
-        margin: 0px;
+        border-radius: 17px 17px 17px 17px;
+        width: 350px;
+        height: 51px;
         padding: 0px;
+        overflow: hidden;
         
     }
     #recherche_site{
-        width: 233px;
-        height: 45px;
-        margin: 0px ;
+        width: 252.3px;
+        height: 30px;
         font-size: 20px;
         border-style: none;
     
     }
-
     form div i{
-        height: 38.5px;
-        padding-top: 12px;
-        border-radius: 15px 0px 0px 15px;
+        height: 100%;
+        
+    }
+    form div {
+        padding-top: 2.5px;
+        height: 100%;
+        
     }
 
+/* i barre de reccherche mobile*/
     #bouton_mobile{
-    border-style: none;
-    color: rgb(255, 255, 255);
-    background-color:  #0065FC;
-    display: inline-flex;
-    font-size: 20px;
-    padding: 10px 0px 0px 0px;
-    margin: 0px;
-    justify-content: center;
+        border-style: none;
+        color: rgb(255, 255, 255);
+        background-color:  #0065FC;
+        padding: 10px 0px 0px 0px;
     
     }
     form #button2{
         display: inline-block;
         background-color: #0065FC;
         border-style: none; 
-        border-radius: 15px 15px 15px 15px;
-        width: 49px;
-        height: 50px;
-        padding-top: 2px;
+        border-radius: 15px;
+        width: 50px;
+        height: 52px;
+      
         
     }
 
@@ -862,25 +853,25 @@ footer div p{
 
     .style_filtres{
         width: 100%;
-        font-size: 22px;
+        font-size: 19px;
+        
     }
 
 
     #filtres li{
         display: inline-flex;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         
     }
 
     #filtres .style_recherche{
-        right: 15px;
         font-family: 'raleway';
-        font-size: 22px;
+        font-size: 15px;
         display: inline-block;
+        justify-content: start;margin-right: 0px;
     }
 
     #filtres .style_recherche i{
-        
         font-size: 15px;
        
     }
@@ -976,11 +967,11 @@ footer div p{
     background-color: rgb(255, 255, 255);
 }
     #section_articles #titre2{
-        margin-top: 10px;
+        margin-top: 30px;
         font-size: 25px;
     }  
     #afficher_plus{
-        margin-left: 5px;
+        margin-left: 23px;
         margin-top: 30px;
         font-size: 20px;
         font-family: 'raleway'
@@ -992,7 +983,7 @@ footer div p{
         
     }
     .article{
-        margin-left: 0px;
+        margin-left: 23px;
         margin-bottom: 20px;
         width: 88%;
         height: 230px;
@@ -1020,13 +1011,15 @@ footer div p{
     #titre_activites{
         font-size:25px;
         text-align: start;
-        padding-left: 15px;
+        margin-left: 0px;
+        padding-bottom: 30px;
     }
 
     #activites{
         flex-direction: column;
         width: 100%;
         background-color: rgb(255, 255, 255);
+        margin-left: 23px;
     }
 
    .box1, .box2, .box3, .box4{
