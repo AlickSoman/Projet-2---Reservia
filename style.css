@@ -714,8 +714,10 @@ footer div p{
     header{
         width: 100%;
     }
+
     #logodusite{
         width: 100px;
+        padding: 13px;
     }
 /* "display : none" pour cacher le nav par défaut */
     nav {
@@ -807,9 +809,11 @@ footer div p{
         width: 350px;
         height: 51px;
         padding: 0px;
+        left: 15px;
         overflow: hidden;
         
     }
+
     #recherche_site{
         width: 252.3px;
         height: 30px;
@@ -817,14 +821,15 @@ footer div p{
         border-style: none;
     
     }
+
     form div i{
         height: 100%;
         
     }
+
     form div {
         padding-top: 2.5px;
-        height: 100%;
-        
+        height: 100%;  
     }
 
 /* i barre de reccherche mobile*/
@@ -835,6 +840,7 @@ footer div p{
         padding: 10px 0px 0px 0px;
     
     }
+
     form #button2{
         display: inline-block;
         background-color: #0065FC;
@@ -853,7 +859,8 @@ footer div p{
 /* section filtre de recherche*/
 
     .style_filtres{
-        width: 100%;
+        width: 80%;
+        left: 15px;
         font-size: 19px;
         
     }
@@ -891,6 +898,7 @@ footer div p{
 
     #logements_dispodibles{
         font-size: 17px;
+        margin-left: 15px;
     }
     #logements_dispodibles #infos_logements{
         color: #0065FC;
@@ -925,7 +933,7 @@ footer div p{
     }
 
     aside figure figcaption{
-        bottom: 55px;
+        bottom: 40px;
         left: 5px;
     }
 
@@ -940,6 +948,8 @@ footer div p{
 
     aside #populaires{
         font-size: 20px;
+        padding-left: 20px;
+    
     }
     aside a figcaption #titre_aside{
         font-size: 18px;
@@ -951,7 +961,7 @@ footer div p{
 
     .fontawesome_position2 {
         right:5px ;
-        top: 40px;
+        top: 20px;
     }
 
     .fontawesome_position2 i{
@@ -962,11 +972,11 @@ footer div p{
 
 /*article hebergements*/
 
-#hebergements{
+    #hebergements{
     flex-direction: column;
     width: 100%;
     background-color: rgb(255, 255, 255);
-}
+    }
     #section_articles #titre2{
         margin-top: 30px;
         font-size: 25px;
@@ -1004,11 +1014,12 @@ footer div p{
     
     }
     #fontawesome_position{
-        bottom: 20px;
+        padding-top: 10px;
     }
     
 
 /*activité à marseille*/
+
     #titre_activites{
         font-size:25px;
         text-align: start;
@@ -1028,7 +1039,8 @@ footer div p{
     }
 
    #activites div h2{
-        
+        padding: 10px;
+        margin-left: 10px;
         font-size: 20px;
     }
 
@@ -1087,6 +1099,9 @@ footer div p{
         width: 100%;
         height: 150px;
     }
+
+
+
     /* footer section*/
     footer{
         height: 500px;
