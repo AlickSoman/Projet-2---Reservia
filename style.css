@@ -197,49 +197,12 @@ form i{
 }
 
 
-
-#filtres li a{
-    color: black;
-    text-decoration: none;
-    text-align: center;
-}
-#filtres :hover, #filtres li:hover i, #filtres li:hover a{
-color: rgb(255, 255, 255);
-background-color: #0065FC;
-}
-
-
-#infos_logements{
-    color: #0065FC;
-    font-size: 15px;
-    border: 1px solid #e0dddd;
-    margin-right: 5px;
-    border-radius: 100%;
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-
-}
-
-#logements_dispodibles{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 15px;
-    margin-left: 0px;
-    bottom: 10px;
-    
-
-}
-
-
 /* filtre de recherche--------------------------------*/
 #filtres{
     padding-left: 0px;
 }
 
-#filtres :hover, #filtres li:hover i, #filtres li:hover a {
+#filtres .style_recherche:hover #filtres .style_recherche:hover i, #filtres .style_recherche:hover a {
     color: rgb(255, 255, 255);
     background-color: #0065FC;
 }
@@ -266,6 +229,39 @@ background-color: #0065FC;
     margin-left: 10px;
     font-weight: 700;
     font-family: 'raleway';
+}
+
+
+
+#filtres li a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#infos_logements{
+    color: #0065FC;
+    font-size: 15px;
+    border: 1px solid #e0dddd;
+    margin-right: 5px;
+    border-radius: 100%;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+#logements_dispodibles{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-left: 0px;
+    bottom: 10px;
+    
+
 }
 
 
@@ -775,7 +771,7 @@ footer div p{
         border-top: none;
     }
 /* Désactivation du border top, par display none--------------------------------*/
-    .mobilescreen ul li:hover {
+    .mobilescreen ul .style_recherche:hover {
         
         border-bottom-color: #0065FC ;
     }
