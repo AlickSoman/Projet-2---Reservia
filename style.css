@@ -306,8 +306,10 @@ section{
     font-family: 'raleway';
     font-size: 19px;
     display: flex;
-    padding-top: 20px;
+    padding-top: 30px;
     margin-left:50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     width: 100%;
 }
 
