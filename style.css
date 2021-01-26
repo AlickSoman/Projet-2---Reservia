@@ -202,7 +202,7 @@ form i{
     padding-left: 0px;
 }
 
-#filtres .style_recherche:hover #filtres .style_recherche:hover i, #filtres .style_recherche:hover a {
+#filtres .style_recherche:hover, #filtres .style_recherche:hover i, #filtres .style_recherche:hover a {
     color: rgb(255, 255, 255);
     background-color: #0065FC;
 }
@@ -265,8 +265,6 @@ form i{
 }
 
 
-
-
 /*Font Awesome color/position --------------------------------*/
 
 .style_recherche i{
@@ -281,10 +279,7 @@ form i{
     line-height: 45px;
 }
 
-.element_cliquable{
-    text-decoration: none;
-    color: black;
-}
+
 
 
 /*Section centrale herbegements et activités --------------------------------*/
@@ -316,13 +311,24 @@ section{
     width: 100%;
 }
 
+.element_cliquable{
+    display: flex;
+    flex-wrap: wrap;
+
+    text-decoration: none;
+    color: black;
+    width: 230px;
+    height: 160px;
+    margin-bottom: 30px;
+}
+
 .article{
     display: flex;
     flex-wrap: wrap;
     border: 2px solid rgb(255, 255, 255);
     background-color: #FFFFFF;
     border-radius: 10px;
-    flex-basis: 205px;
+    flex-basis: 230px;
     height: 160px;
     box-shadow: 5px 5px 5px rgb(230, 230, 230);
     margin: 10px;
@@ -395,9 +401,16 @@ section{
     display: flex;
     font-family: 'raleway';
     font-size: 15px;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 50px;
+    margin-bottom: 0;
     width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+
+#afficher_plus a{
+    width: 90px;
 }
 
 /*Section block_droit texte plus icon--------------------------------*/
@@ -430,31 +443,45 @@ aside{
     padding-bottom: 20px;
 }
 
-aside figure{
+aside .element_cliquable_aside{
+
+    margin: auto;
+    margin-bottom: 40px;
+    width: 320px;
+    height: 120px;
+    text-decoration: none;
+    color: black;
+
+    border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(212, 212, 212);
-    width: 320px;
-    height: 120px;
-    border-radius: 10px;
-    margin: auto;
-    margin-bottom: 20px;
 }
 
-aside figure figcaption{
-    position: relative;
+aside figure{
+    width: 100%;
+    height: 120px;
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+}
+
+aside  figure .image_mask{
+    height: 100%;
+    padding-bottom: 40px;
     display: inline-block;
-    width: 50%;
-    bottom: 35px;
+
+}
+
+aside .element_cliquable_aside figure figcaption{
+    display: inline-block;
+    position: relative;
     padding-left:10px ;
+    bottom: 20%;
     
 }
 
-aside figure .image_mask{
-    height: 100%;
-    display: inline-block;
 
-}
 
 aside figure .image_mask img{
     width: 140px;
@@ -468,14 +495,12 @@ aside figure .image_mask img{
     display: inline;
     font-size: 15px ;
     font-family: 'raleway';
-    margin-bottom: 25px;
-    margin-top: auto;
-    width: 60%;
+
 }
 
 .prix_aside{
     font-size: 10px ;
-    font-family: 'raleway' ;
+    font-family: 'raleway';
     margin-top: 5px;
     width: 70%;
     
@@ -485,26 +510,20 @@ aside figure .image_mask img{
 .fontawesome_position2{
     position: relative;
     margin-bottom: auto;
-    top: 25px;
+    top: 5px;
     width: 70%;
-    padding-right:15px ;
+    margin-left:0px ;
 
 }
 
 .fontawesome_position2 i{
     color: #0065FC;
     font-size: 10px;
-    margin-left: 5px;
-    width: 2%;
+    margin: 0px;
+    width: 10%;
 }
 
-#class1_0star{
-    color: #e0dddd;
-    font-size: 10px;
-    margin-left: 5px;
-    width: 2%;
-   
-}
+
 
 /*Section Ativités à Marseille--------------------------------*/
 #titre_activites{
@@ -516,7 +535,12 @@ aside figure .image_mask img{
     padding-bottom:20px;
     margin-left: 0px;
 }
-
+.element_cliquable_activies{
+    text-decoration: none;
+    color: black;
+    
+    overflow: hidden;
+}
 
 #activites{
     background-color: rgb(255, 255, 255);
@@ -911,24 +935,44 @@ footer div p{
         border-radius: 0%;
 
     }
-    aside figure{
+
+    aside .element_cliquable_aside {
+      
+        height: 140px;
         width: 90%;
-        height: 150px;
+        overflow: hidden;
+
+
     }
-    aside figure .image_mask{
+
+    aside a figure{
+        width: 100%;
+        height: 100%;
+    }
+    
+    aside a figure .image_mask{
         width: 45%;
     }
 
-    aside figure .image_mask img{
+    aside a figure .image_mask img{
         width: 100%;
+        position: relative;
     }
 
-    aside figure figcaption{
+    aside a figure figcaption{
         bottom: 40px;
         left: 5px;
     }
 
-    aside figure figcaption .prix_aside{
+    aside .element_cliquable_aside figure figcaption{
+    display: inline-block;
+    position: relative;
+    padding-left:10px ;
+    bottom: 30%;
+    
+}
+
+    aside a figure figcaption .prix_aside{
         font-size: 10px;
         padding-top: 5px;
     }
@@ -940,6 +984,7 @@ footer div p{
     }
     aside figcaption .titre_aside{
         font-size: 18px;
+        
     }
 
     aside figcaption .prix_aside{
@@ -953,7 +998,7 @@ footer div p{
 
     .fontawesome_position2 i{
         font-size: 15px;
-        padding-right:7px ;
+        width: 15%;
     }
     
 
@@ -964,6 +1009,17 @@ footer div p{
     width: 100%;
     background-color: rgb(255, 255, 255);
     }
+
+    #hebergements .element_cliquable {
+        /* display: flex; */
+        text-decoration: none;
+        color: black;
+        width: 97%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+
     #section_articles #titre2{
         margin-left: 20px;
         margin-top: 30px;
@@ -984,7 +1040,7 @@ footer div p{
     .article{
         margin-left: 23px;
         margin-bottom: 20px;
-        width: 88%;
+        flex-basis: 100%;
         height: 230px;
         display: flex;
         flex-direction: column;
@@ -1017,9 +1073,21 @@ footer div p{
 
     #activites{
         flex-direction: column;
-        width: 100%;
+        flex-basis: 100%;
+        height: 100%;
         background-color: rgb(255, 255, 255);
         margin-left: 23px;
+    }
+
+    
+
+    .element_cliquable_activies{
+        text-decoration: none;
+        color: black;
+        width: 97%;
+        height: 180px;
+        margin-bottom: 0px;
+        overflow: hidden;
     }
 
    .box1, .box2, .box3, .box4{
