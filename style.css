@@ -18,12 +18,12 @@ body{
 
 }
 
-/*Section principal boc pade--------------------------------*/
+/*Section principal boc page--------------------------------*/
 #bloc_page{
     flex-wrap: wrap;
     position: relative;
     background-color: #ffffff;
-    /*width auto pour que les bloc se mettent l'un en dessous de l'autre en fonction de 
+    /*flex-wrap pour que les bloc se mettent l'un en dessous de l'autre en fonction de 
     la taille de l'écren*/
     width: 90%;
     margin: 20px auto;
@@ -706,7 +706,7 @@ footer div p{
     margin-left: 300px;
 }
 
-/*diplay none =  affichage prédéfinie selon écran--------------------------------*/
+/*diplay none du menu mobile=  affichage prédéfinie selon écran--------------------------------*/
 .mobilescreen{
     display: none;
 }
@@ -773,7 +773,7 @@ footer div p{
         margin-top: 10px;
 
     }
-/* menu à mettre à jour---------------------------------------*/
+/* menu mobile---------------------------------------*/
 
     .mobilescreen{
         display: block;
@@ -796,7 +796,7 @@ footer div p{
         border-bottom: 2px solid #DEEBFF;
         border-top: none;
     }
-/* Désactivation du border top, par display none--------------------------------*/
+
     .mobilescreen ul .style_recherche:hover {
         
         border-bottom-color: #0065FC ;
@@ -1004,7 +1004,7 @@ footer div p{
     }
     
 
-/*article hebergements----------------------------------------------------------------*/
+/*articles hebergements----------------------------------------------------------------*/
 
     #hebergements{
     flex-direction: column;
