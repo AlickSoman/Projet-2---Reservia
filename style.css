@@ -742,53 +742,48 @@ footer div p{
         width: 100px;
         padding: 13px;
     }
-/* "display : none" pour cacher le nav par défaut --------------------------------*/
-    nav {
+
      
-        display: none;
-    
-    }
   
 /* header Mobile screen nav --------------------------------*/
 
-    .mobilescreen_s{
-        display: block;
-        justify-content: center;
+    .asinscrire{
+        display: flex;
+        justify-content: flex-end;
         border-bottom-color: #0065FC ;
-        margin-left: 0px;
+        margin-right: 15px;
         padding: 0px;
-
-    }
-
-
-    .mobilescreen_s ul li:hover{
-        border-bottom-color: #0065FC ;
-    }
-
-    .mobilescreen_s ul li {
         font-family: 'raleway';
         border-top: none;
         font-size: 20px;
         border-bottom: 2px solid transparent;
-        margin-top: 10px;
+        padding-top: 30px;
+        text-decoration: none;
+
 
     }
+
+
+    .asinscrire:hover{
+        border-bottom-color: #0065FC ;
+    }
+
 /* menu mobile---------------------------------------*/
 
-    .mobilescreen{
+    nav{
         display: block;
         justify-content: center;
         border-bottom-color: #0065FC ;
         padding-top: 30px;
 
     }
-    .mobilescreen ul{
+    nav ul{
         width: 100%;
         
     }
 
 
-    .mobilescreen ul li {
+    nav ul li {
         height: 80px;
         text-align: center;
         width: 50%;
@@ -797,7 +792,7 @@ footer div p{
         border-top: none;
     }
 
-    .mobilescreen ul .style_recherche:hover {
+    nav ul li:hover {
         
         border-bottom-color: #0065FC ;
     }
@@ -824,10 +819,11 @@ footer div p{
     }
 
     form{
+        display: inline-block;
         border: 2px solid #F2F2F2;
         background-color: rgb(255, 255, 255);
         border-radius: 17px 17px 17px 17px;
-        width: 350px;
+        width: 280px;
         height: 51px;
         padding: 0px;
         left: 15px;
@@ -836,10 +832,11 @@ footer div p{
     }
 
     #recherche_site{
-        width: 252.3px;
+        width: 65%;
         height: 30px;
         font-size: 20px;
         border-style: none;
+        font-size: 16px;
     
     }
 
@@ -871,10 +868,8 @@ footer div p{
         height: 52px;
         
     }
+   
 
-    header form{
-        display: inline-block;
-    }
 
 /* section filtre de recherche----------------------------------------------------------------*/
 
@@ -969,14 +964,19 @@ footer div p{
     aside .element_cliquable_aside figure figcaption{
     display: inline-block;
     position: relative;
-    padding-left:10px ;
-    bottom: 30%;
+    padding-left:0px ;
+    bottom: 20%;
     
 }
-
+ aside figcaption .titre_aside{
+        font-size: 16px;
+        
+        
+    }
     aside a figure figcaption .prix_aside{
-        font-size: 10px;
-        padding-top: 5px;
+        font-size: 13px;
+        padding-top: 0px;
+        
     }
 
     aside #populaires{
@@ -984,14 +984,7 @@ footer div p{
         padding-left: 20px;
     
     }
-    aside figcaption .titre_aside{
-        font-size: 18px;
-        
-    }
-
-    aside figcaption .prix_aside{
-        font-size: 13px;
-    }
+   
 
     .fontawesome_position2 {
         right:5px ;
@@ -999,7 +992,7 @@ footer div p{
     }
 
     .fontawesome_position2 i{
-        font-size: 15px;
+        font-size: 12px;
         width: 15%;
     }
     
@@ -1023,9 +1016,10 @@ footer div p{
     
 
     #section_articles #titre2{
-        margin-left: 20px;
-        margin-top: 30px;
-        font-size: 25px;
+        margin-left: 25px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
     }  
     #afficher_plus{
         margin-left: 25px;
@@ -1048,7 +1042,7 @@ footer div p{
         flex-direction: column;
     }
     #hebergements .article figcaption h5{
-        font-size: 19px;
+        font-size: 16px;
         width: 100%;
     }
     #hebergements .article figcaption #p_prix{
@@ -1056,7 +1050,7 @@ footer div p{
         width: 100%;
     }
     #hebergements .article figcaption i{
-        font-size: 15px;
+        font-size: 12px;
     
     }
     #fontawesome_position{
@@ -1099,7 +1093,7 @@ footer div p{
    #activites div h2{
         padding: 10px;
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .box1 .activites_marseille_big{
