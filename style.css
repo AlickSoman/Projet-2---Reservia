@@ -95,6 +95,16 @@ nav a{
 
 .asinscrire{
     color: #0065FC;
+    text-decoration: none;
+    float : right;
+    border-top: 2px solid transparent;
+    font-size: large;  
+    display: block;
+    padding: 20px 20px;
+}
+
+.asinscrire:hover{
+    border-top-color: #0065FC;
 }
 
 nav ul li{
@@ -103,6 +113,7 @@ nav ul li{
     border-top: 2px solid transparent;
     font-size: large;    
 }
+
 
 nav ul li:hover{
     border-top-color: #0065FC;
